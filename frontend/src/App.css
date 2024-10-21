@@ -1,0 +1,147 @@
+.chat-container {
+  width: 100%;
+  max-width: 450px; 
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  background-color: #f7f7ff;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 26px;
+  color: #ffffff;
+  background-color: #5a005a;
+  padding: 10px 0;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+
+.agent-status {
+  padding: 7px;
+  text-align: center;
+  color: #28a745;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.online-icon {
+  color: #28a745;
+  margin-right: 8px;
+  font-size: 22px;
+}
+
+.chat-box {
+  height: 450px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f0f0ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-message, .bot-message {
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-message {
+  background-color: #6a007d;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 25px 25px 0 25px;
+  max-width: 75%;
+  align-self: flex-end;
+  transition: transform 0.3s ease;
+}
+
+.user-message:hover {
+  transform: scale(1.02);
+}
+
+.bot-message {
+  background-color: #e0e0e0;
+  color: black;
+  padding: 12px 15px;
+  border-radius: 25px 25px 25px 0;
+  max-width: 75%;
+  align-self: flex-start;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.bot-message:hover {
+  transform: scale(1.02);
+}
+
+.bot-message-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bot-icon {
+  color: #5a005a; 
+  margin-right: 8px;
+  font-size: 26px;
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+}
+
+.loading-message {
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #800080;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #800080;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #6a007d;
+  transform: scale(1.05);
+}
